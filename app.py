@@ -21,7 +21,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
 pipe = pickle.load(open('pipe.pkl','rb'))
 st.title('IPL Win Predictor')
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     batting_team = st.selectbox('Select the batting team',sorted(teams))
